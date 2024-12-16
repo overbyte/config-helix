@@ -78,7 +78,12 @@ auto-format = true
 [[language]]
 name = "html"
 language-servers = [ "tailwindcss-ls", "emmet-lsp" ]
-formatter = { command = "prettier", args = [ "--parser", "go-template" ] }
+formatter = { command = "prettier", args = [ "--parser", "html" ] }
+# NOTE: you can add a .helix folder into a go project and add a languages.toml file
+# to create project specific language config. This may be useful for go templates
+# in .html files like in a hugo project
+# source: https://github.com/helix-editor/helix/discussions/12273#discussioncomment-11584223
+#formatter = { command = "prettier", args = [ "--parser", "go-template" ] }
 auto-format = true
 
 [[language]]
